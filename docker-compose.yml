@@ -1,0 +1,14 @@
+version: "3"
+services:
+  node:
+    image: flyxdocker/nodeJsChatApp:latest
+    container_name: node
+    user: node
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "80:3000"
