@@ -1,7 +1,7 @@
 version: "3"
 services:
   node:
-    image: flyxdocker/nodeJsChatApp:latest
+    image: flyxdocker/nodejschatapp:latest
     container_name: node
     user: node
     working_dir: /home/node/app

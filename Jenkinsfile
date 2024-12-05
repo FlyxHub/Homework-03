@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker image') {
             steps {
                 script {
-                    app = docker.build('flyxdocker/nodeJsChatApp:latest')
+                    app = docker.build('flyxdocker/nodejschatapp:latest')
                 }
             }
         }
